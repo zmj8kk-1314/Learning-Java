@@ -7,5 +7,6 @@ public class test01{
         double amount=price*count;
         System.out.println("数量："+count);
         System.out.printf("金额：%.2f%n",amount);
+        input.close();
     }
 }
