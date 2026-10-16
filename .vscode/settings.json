@@ -1,0 +1,23 @@
+{
+    "debug.console.acceptSuggestionOnEnter": "off",
+    "debug.internalConsoleOptions": "neverOpen",
+    "java.debug.settings.console": "externalTerminal",
+    "java.jdt.ls.java.home": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7",
+            "default": true
+        }
+    ],
+    "java.project.sourcePaths": [
+        "output"
+    ],
+    "java.project.outputPath": "bin",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.env.windows": {
+        "JAVA_HOME": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7",
+        "PATH": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7\\bin;${env:PATH}"
+    }
+}

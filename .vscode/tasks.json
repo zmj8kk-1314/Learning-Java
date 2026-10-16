@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Java: javac 生成当前文件",
+            "type": "shell",
+            "command": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7\\bin\\javac.exe",
+            "args": [
+                "-encoding",
+                "UTF-8",
+                "-g",
+                "-d",
+                "${fileDirname}",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "JAVA_HOME": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7"
+                }
+            },
+            "problemMatcher": [
+                "$javac"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "使用 JDK 21 编译当前 Java 文件"
+        },
+        {
+            "label": "Java: 运行当前文件",
+            "type": "shell",
+            "command": "D:\\microsoft-jdk-21.0.10-windows-x64\\jdk-21.0.10+7\\bin\\java.exe",
+            "args": [
+                "-cp",
+                "${fileDirname}",
+                "${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": "Java: javac 生成当前文件",
+            "problemMatcher": [],
+            "detail": "编译并运行当前 Java 文件"
+        }
+    ]
+}
