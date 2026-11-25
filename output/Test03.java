@@ -1,4 +1,4 @@
-public class Test03 {
+public class test03 {
     public static void main(String[] args) {
         Employee [] staff = new Employee[3];
         staff[0] = new Employee("小王",6000);
